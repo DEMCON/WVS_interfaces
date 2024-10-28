@@ -1,0 +1,9 @@
+# UnoadCommand
+string ammunition_type
+int32 amount # strictly larger than 0
+---
+# Result
+uint8 status 
+
+uint8 FINISHED              = 0
+uint8 ABORTED               = 1
