@@ -1,0 +1,25 @@
+# Action to communicatie with the navigation stack.
+
+# Goal:
+
+# List of GPS coordinates to navigate through. Coordinates will be navigated through in order.
+geographic_msgs/GeoPoint[] waypoints
+
+#requested heading for the final waypoint. In degrees, CW from north
+float64 final_heading
+---
+# Result:
+
+# Remaing waypoints to be completed
+geographic_msgs/GeoPoint[] remaining_waypoints
+
+# Literal feedback as produced by NAV2.
+string feedback
+---
+# Feedback:
+
+# Distance to the end-point in meters, as the crow flies
+float64 remaining_distance
+
+# Remaing waypoints to be completed
+geographic_msgs/GeoPoint[] remaining_waypoints

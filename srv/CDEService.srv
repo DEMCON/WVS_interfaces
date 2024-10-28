@@ -1,0 +1,9 @@
+# CDERequest
+FiringSolution firing_solution
+Detection target
+---
+# CDEReport
+geographic_msgs/GeoPoint[] expected_area_of_impact
+float64 expected_num_civilians
+float64 expected_num_buildings
+string image_url

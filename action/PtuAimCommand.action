@@ -1,0 +1,31 @@
+# Action to rotate the ptu to a certain rotation
+
+# Goal
+# type of rotation to be executed
+uint8 aim_mode
+
+uint8 RELATIVE              = 0 # aiming relative w.r.t. vehicle
+uint8 GLOBAL                = 1 # aiming relative to world
+uint8 POSITION              = 2 # aiming for a certain location
+
+# variables used, depending on which aim mode is used
+float64 pitch                         # [degrees] elevation w.r.t horizontal, positive is up
+float64 heading                       # [degrees] rotation CW w.r.t north
+float64 tilt                          # [degrees] elevation.w.r.t forward axis of robot, positive is up
+float64 pan                           # [degrees] rotation CW w.r.t forward axis of robot
+geographic_msgs/GeoPoint position   # Location to aim PTU bore axis at
+---
+# Result
+uint8 result 
+
+uint8 FINISHED              = 0
+uint8 ABORTED               = 1
+
+float64 tilt_deviation                # [degrees] error in degrees, not absolute, error defined as setpoint - current
+float64 pan_deviation                 # [degrees] error in degrees, not absolute, error defined as setpoint - current
+
+---
+
+# Feedback
+float64 tilt_deviation   
+float64 pan_deviation

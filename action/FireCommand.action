@@ -1,0 +1,16 @@
+# Command to fire
+int32 num_bursts
+int32 num_shots_per_burst
+---
+# Result
+uint8 result 
+
+uint8 FINISHED              = 0
+uint8 FAILED                = 1
+uint8 ABORTED               = 2
+
+---
+
+# Feedback
+int32 left_bursts   
+int32 left_shots
