@@ -1,0 +1,13 @@
+# action to observe certain area
+# action executed by observation manager
+# no real feedback, but action for the purpose of cancelling easily
+
+# Goal
+geographic_msgs/GeoPoint[] area #convex area. Last geopoint must be equal to first geopoint
+
+---
+# Result:
+string feedback
+---
+# Feedback:
+string feedback

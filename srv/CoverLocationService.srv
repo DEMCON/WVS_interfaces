@@ -1,0 +1,12 @@
+#CoverLocationRequest
+geographic_msgs/GeoPoint[] enemy_observation_points
+uint32 max_enemy_observation_point_count
+float64 sensor_height
+float64 own_height
+float64 own_size
+float64 search_radius
+geographic_msgs/GeoPoint[] search_location
+---
+#CoverLocationResponse
+Locations[] locations
+float64 resolution

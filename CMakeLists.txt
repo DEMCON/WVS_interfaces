@@ -22,6 +22,8 @@ set(ptu_files
     "msg/IncrementialPTUattitude.msg"
     "msg/PTUPose.msg"
     "action/PtuAimCommand.action"
+    "action/ObserveAreaCommand.action"
+    "action/TrackDetectionCommand.action"
 )
 
 set(bda_cde_files
@@ -31,8 +33,11 @@ set(bda_cde_files
     "msg/Detection.msg"
     "msg/FiringSolution.msg"
     "msg/SignatureElement.msg"
-	"srv/BDAService.srv"
+	  "srv/BDAService.srv"
     "srv/CDEService.srv"
+    "srv/CoverLocationService.srv"
+    "srv/ObservationLocationService.srv"
+    "msg/Locations.msg"
 )
 
 set(misc_files
