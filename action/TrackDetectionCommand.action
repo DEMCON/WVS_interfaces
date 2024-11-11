@@ -1,0 +1,28 @@
+# action for observation manager to track target
+
+#Goal
+Detection object
+string weapon_id
+string camera_id
+uint8 extrapolation_time
+
+---
+# Result
+float64 tilt_deviation                # [degrees] error in degrees, not absolute, error defined as setpoint - current
+float64 pan_deviation                 # [degrees] error in degrees, not absolute, error defined as setpoint - current
+string weapon_id
+string camera_id
+
+uint8 result 
+
+uint8 FINISHED              = 0
+uint8 FAILED                = 1
+uint8 ABORTED               = 2
+
+
+---
+# Feedback
+float64 tilt_deviation                # [degrees] error in degrees, not absolute, error defined as setpoint - current
+float64 pan_deviation                 # [degrees] error in degrees, not absolute, error defined as setpoint - current
+string weapon_id
+string camera_id

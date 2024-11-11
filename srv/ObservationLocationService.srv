@@ -1,0 +1,12 @@
+#ObservationLocationRequest
+geographic_msgs/GeoPoint[] points_of_interest
+uint32 min_points_of_interest_count
+float64 sensor_height
+float64 own_height
+float64 observable_height
+float64 search_radius
+geographic_msgs/GeoPoint[] search_location
+---
+#ObservationLocationResponse
+Locations[] locations
+float64 resolution
