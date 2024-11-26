@@ -1,7 +1,7 @@
 # action for observation manager to track target
 
 #Goal
-Detection object
+Detection detection
 string weapon_id
 string camera_id
 uint8 extrapolation_time
